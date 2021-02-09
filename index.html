@@ -1,17 +1,43 @@
 <!DOCTYPE HTML>
-<html> 
-	<head>
-		<title>Welcome to AFEEL, Inc.</title>
-	</head>
-	
-	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=0" /> 
-	
-	<frameset rows="*,0" frameborder="NO" border="0" framespacing="0">  
-		<frame name="main" scrolling="auto" noresize src="main.html" marginwidth="0" marginheight="0">
-		<frame name="page" scrolling="no"  noresize src="" marginwidth="0" marginheight="0">
-	</frameset>
-	<noframes>
-		<body bgcolor="#FFFFFF" text="#000000">
-	</noframes>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="검색 로봇에 의해 검색되기를 원하는 사이트 주제를 적는다">
+<meta name="keywords" content="검색 로봇에 의해 검색되기를 원하는 키워드를 적는다.">
+<title>Welcome to AFEEL, Inc.</title>
+
+
+<script language="javascript">
+function hidestatus()
+{
+window.status="www.afeel.biz"
+return true
+}
+if (　document.layers){
+　document.captureEvents(Event.mouseover | Event.mouseout)
+　document.onmouseover=hidestatus
+　document.onmouseout=hidestatus
+}
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+function Frameset(page) {
+framecode = "<frameset rows='1*'>"
++ "<frame name=main src="./+ page +">"
++ "</frameset>";
+
+　document.write(framecode);
+　document.close();
+}
+</script>
+<frameset rows="1*">
+<frame name="main" src="main.html"> <------ 초기화면으로 열기를 원하는 페이지 경로를 지정한다.
+<noframes>
+</head>
+<body>
+</noframes>
+</frameset>
+
+</body>
 </html>
-	
+

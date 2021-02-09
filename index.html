@@ -1,15 +1,19 @@
 <html>
-
 <head>
+<title>main</title>
+<script>
+function Frameset(page)
+{
+    framecode = "<frameset rows='1*'>"
+    + "<frame name=main src='" + page + "'>"
+    + "</frameset>";
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-<title>AFEEL, Inc.OK</title>
-
+    document.writｅ(framecode);
+    document.close();
+}
+</script>
 </head>
+<body onLoad="Frameset('http://cho-sungmok.github.io/html/main.html')">
+</body>
+</html>
 
-  <frameset rows="100%" border="0">
-    <frame src="main.html" name="frame">
-  </frameset>
-
-</html> 
